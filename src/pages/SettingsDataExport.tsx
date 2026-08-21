@@ -131,11 +131,11 @@ export default function SettingsDataExport() {
       <section className="rounded-lg border border-gray-100 px-3 py-3">
         <h3 className="mb-2 text-sm font-semibold text-gray-700">原型边界</h3>
         <ul className="list-disc space-y-1 pl-4 text-xs text-gray-500">
-          <li>稳定捕获 demo 使用确定性的去标识 fixture 路径。</li>
-          <li>Fixture 路径不是生产级 OCR，也不是通用图像理解。</li>
-          <li>OCR 技术验证是独立工作，当前稳定 demo 尚未实现。</li>
-          <li>非 fixture 截图会安全失败，并可回退到手动录入。</li>
-          <li>当前原型不声明模型准确率或校准置信分。</li>
+          <li>截图辅助录入使用服务端 Gemini multimodal extraction 读取用户主动上传的截图。</li>
+          <li>AI 结果会进入可编辑的共享表单，只有用户确认保存后才写入记录。</li>
+          <li>当前 MVP 不声明生产级截图鲁棒性、模型准确率或校准置信分。</li>
+          <li>专用生产 OCR pipeline、后台扫描和生产级自动化不在当前范围内。</li>
+          <li>AI 不会自动保存、自动取消订阅或执行支付。</li>
         </ul>
       </section>
 
